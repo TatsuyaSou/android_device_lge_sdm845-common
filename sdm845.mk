@@ -232,9 +232,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.lge_sdm845
 
 # FM packages
 PRODUCT_PACKAGES += \
@@ -295,6 +292,10 @@ PRODUCT_PACKAGES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
+    
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.lge_sdm845
 
 # Media
 PRODUCT_COPY_FILES += \
